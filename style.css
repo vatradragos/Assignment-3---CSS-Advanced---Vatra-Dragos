@@ -1,0 +1,108 @@
+/* Start stil <html> */
+
+* {
+	box-sizing: border-box;
+}
+
+/* Stop stil <html> */
+
+/* Start stil <body> */
+
+body {
+	width: auto;
+	margin: 0 auto;
+}
+
+/* Stop stil <body> */
+
+/* Start stil <header> */
+
+/* Containerul care contine titlul paginii l-am stilizat ca un grid
+	care sa ocupe o fractiune de pagina indiferent de latimea paginii */
+
+#title-container {
+	display: grid;
+	grid-auto-columns: auto;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr;
+	margin: 10px 100px;
+}
+
+#title-container > h1 {
+	font-family: sans-serif;
+	font-size: 1.3em;
+}
+
+
+/* Stop stil <header> */
+
+/* Start stil <section> */
+
+/* Containerul care contine galeria de imagini l-am stilizat ca un flex-box
+	caruia i-am dat o margine pentru a centra galeria pe pagina */
+
+#section-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	margin-left: 90px;
+}
+
+/* Elementele <div> din cadrul div-ului parinte le-am stilizat ca flex-box-uri
+	in care am inclus imaginea .png pe care am redimensionat-o potrivit dimensiunii
+	fiecarui element div cu clasa "items" */
+
+.items {
+	display: flex;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	border-radius: 10px;
+	display: block;
+  	position: relative;
+  	align-self: flex-start;
+  	margin: 8px;
+  	padding-top: 171px;
+  	text-align: center;
+  	font-size: 1.5em;
+  	font-family: sans-serif;
+  	background-image: url("placeholder-image.png");
+  	background-repeat: no-repeat;
+}
+
+/* Elementele <span> din cadrul elementelor <div> cu clasa "items"
+	le-am stilizat ca text simplu caruia i-am creat o culoare de fundal
+	si cadre interne la stanga si la dreapta*/
+
+.items > span {
+	background-color: white;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+/* Stop stil <section> */
+
+/* Start stil <footer> */
+
+/* Containerul care contine textul paginii l-am stilizat ca un grid,
+	la fel ca titlul paginii */
+
+#footer-container {
+	display: grid;
+	grid-auto-columns: auto;
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr;
+	margin: 10px 100px;
+}
+
+#grid-container > p {
+	font-family: sans-serif;
+}
+
+/* Stop stil <footer> */
